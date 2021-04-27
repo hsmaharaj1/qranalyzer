@@ -94,7 +94,7 @@ class MWindow(QtWidgets.QMainWindow):
                 self.text_data.append(data_out)
                 _ = straight_qrcode
             else:
-                print("No Data is Found")
+                self.text_data.append("No Data is Found")
         except:
             self.showDialog()
 
