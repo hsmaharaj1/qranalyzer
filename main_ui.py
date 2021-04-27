@@ -91,7 +91,6 @@ class MWindow(QtWidgets.QMainWindow):
         try:
             data_out, bbox, straight_qrcode = detect.detectAndDecode(img_r)
             if bbox is not None:
-                print(data_out, bbox)
                 self.text_data.append(data_out)
                 _ = straight_qrcode
             else:
