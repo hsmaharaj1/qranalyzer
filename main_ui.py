@@ -110,7 +110,10 @@ class MWindow(QtWidgets.QMainWindow):
             self.showDialog()
 
     def copy(self):
-        QtWidgets.QApplication.clipboard().setText(data_out)
+        try:
+            QtWidgets.QApplication.clipboard().setText(data_out)
+        except:
+            pass
     
     def showDialog(self):
         msgBox = QtWidgets.QMessageBox()
