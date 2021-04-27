@@ -76,6 +76,7 @@ class MWindow(QtWidgets.QMainWindow):
         img.save("newqr.png")
 
     def create(self):
+        self.text_data.clear()
         global DATA
         DATA = self.data_box.toPlainText()
         self.generate_qr(DATA)
