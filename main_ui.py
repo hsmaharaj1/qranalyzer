@@ -25,8 +25,6 @@ class MWindow(QtWidgets.QMainWindow):
         self.open_btn.clicked.connect(self.fopen)
         self.copy_btn.clicked.connect(self.copy)
         
-
-
     def mousePressEvent(self, event):
         if event.button() == QtCore.Qt.LeftButton:
             self.offset = event.pos()
