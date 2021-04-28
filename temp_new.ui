@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>566</height>
+    <width>780</width>
+    <height>492</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -32,7 +32,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(36, 36, 36);</string>
+   <string notr="true">background-color: rgb(38, 38, 38);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -59,6 +59,13 @@
       <width>20</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">border-radius: 10px;
@@ -102,7 +109,7 @@ background-color: rgb(245, 245, 0);</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <pointsize>16</pointsize>
       <weight>75</weight>
       <bold>true</bold>
      </font>
@@ -121,26 +128,26 @@ background-color: rgb(0, 214, 0);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>80</y>
-      <width>101</width>
+      <x>40</x>
+      <y>400</y>
+      <width>141</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Semibold</family>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
+      <family>Bahnschrift</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
       <italic>false</italic>
-      <bold>true</bold>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>DATA</string>
+     <string>ENTER DATA</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -152,9 +159,9 @@ background-color: rgb(0, 214, 0);</string>
    <widget class="QTextEdit" name="data_box">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>80</y>
-      <width>451</width>
+      <x>210</x>
+      <y>400</y>
+      <width>411</width>
       <height>41</height>
      </rect>
     </property>
@@ -171,22 +178,23 @@ background-color: rgb(0, 214, 0);</string>
     <property name="geometry">
      <rect>
       <x>650</x>
-      <y>90</y>
+      <y>400</y>
       <width>93</width>
-      <height>28</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI Semibold</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Bahnschrift</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(0, 199, 96);</string>
+background-color: rgb(68, 245, 150);
+border-radius: 3px;</string>
     </property>
     <property name="text">
      <string>CREATE</string>
@@ -201,8 +209,8 @@ background-color: rgb(0, 199, 96);</string>
    <widget class="QPushButton" name="open_btn">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>210</y>
+      <x>10</x>
+      <y>50</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -217,19 +225,21 @@ background-color: rgb(0, 199, 96);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 170, 255);</string>
+background-color: rgb(115, 206, 253);
+border-radius: 2px;
+</string>
     </property>
     <property name="text">
-     <string>OPEN</string>
+     <string>ADD</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="text_data">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>290</y>
-      <width>261</width>
-      <height>231</height>
+      <x>360</x>
+      <y>160</y>
+      <width>381</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -239,48 +249,15 @@ background-color: rgb(0, 170, 255);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">
+background-color: rgb(255, 255, 255);</string>
     </property>
-   </widget>
-   <widget class="QWidget" name="gridLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>280</y>
-      <width>291</width>
-      <height>251</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <property name="sizeConstraint">
-      <enum>QLayout::SetDefaultConstraint</enum>
-     </property>
-     <item row="0" column="1">
-      <widget class="QLabel" name="qr_display">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string> </string>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
    </widget>
    <widget class="QPushButton" name="copy_btn">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>260</y>
+      <x>670</x>
+      <y>270</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -294,6 +271,86 @@ background-color: rgb(0, 170, 255);</string>
     <property name="flat">
      <bool>true</bool>
     </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>370</y>
+      <width>20</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>_</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pre_photo">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>271</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Assets/images.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>291</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="qr_display">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
