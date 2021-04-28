@@ -1,7 +1,7 @@
 """
 Project: QR CODE Analyzer
-Written by: Himanshu
-Designed by: Jagannath
+Written by: Himanshu S.
+Designed by: Jagannath T.
 HS CODES Copyright 2021
 """
 from PyQt5 import uic, QtCore, QtWidgets, QtGui
