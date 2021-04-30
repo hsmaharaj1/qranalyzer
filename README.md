@@ -19,6 +19,6 @@ STATUS: On Development
 <img src="https://user-images.githubusercontent.com/54274314/116666698-e4a49500-a9b8-11eb-888e-e54942b48e11.png" width="600" height="450"/>
 
 ## Licence
-BSD-2-Clause Licence
+BSD-2-Clause License
 
 **It's Free!**
