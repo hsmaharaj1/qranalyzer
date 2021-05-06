@@ -1,6 +1,4 @@
 
-
-
 # QR Analyzer
 This is a simple QR Code Generator and Decoder.
 <br>Runs on Windows Only
@@ -21,7 +19,7 @@ STATUS: On Development
 <img src="https://user-images.githubusercontent.com/54274314/116666698-e4a49500-a9b8-11eb-888e-e54942b48e11.png" width="600" height="450"/>
 
 ## Preview
-https://user-images.githubusercontent.com/54274314/117267572-0ea3fe80-ae74-11eb-806f-02ee1810e318.mp4
+![SS_GIF](https://user-images.githubusercontent.com/54274314/117282747-b7f1f100-ae82-11eb-9253-58d24b029864.gif)
 
 ## Licence
 BSD-2-Clause License
